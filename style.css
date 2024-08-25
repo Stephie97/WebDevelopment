@@ -1,0 +1,120 @@
+/* Removing default margin and padding to avoid default browser styles. "*" is a selector that selects all elements in the document. */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Overall background design. */
+  body {
+    display: flex; /* This allows for the use of Flexbox layouts. */
+    justify-content: center; /* Horizontal centering inside the body. */
+    align-items: center; /* Vertically centering inside the body. */
+    flex-direction: column; /* Vertically centering flex items. */
+    min-height: 100vh; /* Ensuring that the background fills the entire screen. */
+    background-color: #dbad99; /* Setting the background color using a hex color code. */
+    background-size: cover; /* Ensuring that the background image covers the entire screen. */
+    position: relative; /* Positions the background to the flow of the document. */
+  }
+  
+  /* Additional design for the elements with the class ".background". */
+  .background {
+    position: absolute; /* Positioning of the element to its nearest partner element. */
+    top: 0; /* Positioning all the way to the top. */
+    left: 0; /* Positioning all the way to the left. */
+    width: 100%; /* Covering 100 % of the width of the body. */
+    height: 100%; /* Covering 100 % of the height of the body. */
+    background: url("https://transparenttextures.com/patterns/gray-floral.png"); /* External link to a background imagine. */
+    opacity: 0.6; /* Transparency setting. */
+    z-index: -1; /* Placing the element behind higher z-index elements. */
+  }
+  
+  /* Container design */
+  .container {
+    max-width: 500px; /* Max width is set to 500 pixels. */
+    width: 100%; /* Sets the width to 100 % of the body but max 500 pixels. */
+    padding: 20px; /* Adds 20 pixels of padding on all sides inside the container. */
+    background-color: #f9ddce; /* Setting the background color of the container using a hex color code. */
+    border-radius: 8px; /* Rounds the corners of the container by 8 pixels. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0,5); /* Adding a shadow effect around the container. */
+    text-align: center; /* Text centered inside the container. */
+    margin-bottom: 20px; /* Adding 20 pixels of space between text and form */
+  }
+  /* The same logic applyies to the following elements: */
+  /* Heading design */
+  h1 {
+    color: #b76e79;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center; 
+  }
+  
+  /* Paragraph design */
+  p {
+    color: #333; 
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: center; 
+  }
+  
+  /* Label design */
+  form label {
+    display: block;
+    margin-top: 15px;
+    color: #b76e79; 
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Input field design */
+  form input[type="text"] { /* Styling all elements with type "text" inside the form. */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #d4afaf; /* Adds a 1 pixel solid border */
+    border-radius: 4px;
+    background-color: #fff; 
+    font-size: 1em;
+    color: #333; 
+  }
+  
+  /* Submit button design */
+  form input[type="submit"] { /* Styling all elements with type "submit" inside the form. */
+    background-color: #b76e79; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 25px; 
+    width: auto; /* Setting the width to fit the content */ 
+    cursor: pointer; /* Changing the cursor to the hand icon when hovering over the button. */
+    font-size: 1em; /* Font size = base size. */
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adding smooth transitioning when the button is hovered over. */
+  }
+  
+  /* Hover effect for the submit button */
+  form input[type="submit"]:hover {
+    background-color: #8f4b54; /* Changing the color of the button when hovered over. */
+    transform: scale(1.05);  /* Slightly enlarging the button when hovered over. */
+  }
+  /* Media queries for responsive web design. */
+  @media (max-width: 600px) {  /* Adjusting the layout for mobile devices (smaller than 600 pixels). */
+    .container { /* Adjusting the container size and padding. */
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    h1 { /* Adjusting the heading. */
+      font-size: 1.8em;
+    }
+  
+    form input[type="submit"] { /* Adjusting the submit button. */
+      width: auto; /* Adjusting width automatically depending on screen size. */
+      padding: 12px 20px;
+    }
+  }
+  

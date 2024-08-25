@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!--Declares the document as HTML file. The browser now knows to interpret it as an HTML5 document.-->
+<html lang="en"> <!--Specifies the language as "english".-->
+  <head> <!--The head is not displayed on the page but contains meta information about the document.-->
+    <meta charset="UTF-8" /> <!--Specifies the character set to ensure text is displayed correctly on different devices.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Adjusting the width to the devices width without zoom.-->
+    <title>Welcome to Task 6 - by Stephanie Meier</title> <!--Title visible in the browser tab.-->
+    <link rel="stylesheet" href="style.css" /> <!--Link to CSS file.-->
+  </head> <!--End of the head.-->
+  <body> <!--Content displayed in the browser.-->
+    <div class="background"></div> <!--Assings the class "background" to the block-level container "div".-->
+    <div class="container"> <!--Assigns another class "container" to "div" to allow additional styling and grouping of elements.-->
+      <h1>Order Form</h1> <!--This is the heading.-->
+      <p>Please enter your details here:</p> <!--This is a paragraph.-->
+      <form> <!--Start of the input field to collect the data.-->
+        <label for="firstname">First name:</label> <!--Defines the label for the input field "First name".-->
+        <input type="text" id="firstname" name="firstname" value="Stephanie" /> <!--Defines the input field and sets a default value "Stephanie".-->
+        <!--The same logic is applied to the next input fields. I will not specify them individually.-->
+        <label for="lastname">Last name:</label> 
+        <input type="text" id="lastname" name="lastname" value="Meier" /> 
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" value="Oleanderstr. 8" />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="Oberasbach" />
+
+        <label for="zipcode">ZIP code:</label>
+        <input type="text" id="zipcode" name="zipcode" value="90522" />
+
+        <input type="submit" value="Submit" /> <!--Defines the submit button for the form.-->
+      </form> <!--End of the form.-->
+    </div> <!--End of the container.-->
+  </body> <!--End of the body.-->
+</html> <!--End of the html document.->
